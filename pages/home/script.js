@@ -13,6 +13,9 @@ async function renderPosts() {
     let APIPostsResponse = await getPostsAPI(userToken)
     let APIUserResponse = await getUserDataAPI(userToken)
 
+    let userAvatar = document.querySelector('#userAvatar')
+    userAvatar.src = APIUserResponse.avatar
+
     APIPostsResponse.forEach(({content, createdAt, title, user, id}) => {
         const date = new Date(createdAt)
         const formatedDate = Intl.DateTimeFormat('pt-BR', {
