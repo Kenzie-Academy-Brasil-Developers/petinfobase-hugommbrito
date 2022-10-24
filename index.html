@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hugo Brito">
+
+    <!-- Globals -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/margins.css">
+    <link rel="stylesheet" href="./styles/position.css">
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./styles/inputs.css">
+    <!-- Page -->
+    <link rel="stylesheet" href="./pages/login/style.css">
+
+    <title>Petinfo - Login</title>
+    <meta name="description" content="Página de login do site Petinfo">
+    <link rel="shortcut icon" href="../../assets/img/favicons/favicon.jpeg" 
+    type="image/x-icon">
+</head>
+<body>
+    <main class="container-2 flex spc-btwn">
+        <section class="flex-col gap-3 ">
+            <h1 class="font-32-600">Petinfo</h1>
+            <h2 class="font-32-600"><span class="color-primary">Amor</span> e <span class="color-primary">carinho</span> por meio do conhecimento</h2>
+            <p class="font-16-400">Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+            <div class="flex gap-5">
+                <div class="flex-col gap-5">
+                    <div class="flex gap-5">
+                        <img src="./assets/img/pageLogin/Rectangle 2.png" alt="Imagem de um gato marrom com fundo preto">
+                        <img src="./assets/img/pageLogin/Rectangle 3.png" alt="Imagem de um cachorro preto/branco/marrom com fundo rosa claro">
+                    </div>
+                    <img src="./assets/img/pageLogin/Rectangle 4.png" alt="Imagem de cachorro alegre com fundo braco">
+                </div>
+                <div>
+                    <img src="./assets/img/pageLogin/Rectangle 5.png" alt="Imagem de um gato branco com fundo cinza">
+                </div>
+            </div>
+        </section>
+        <section class="flex-col gap-3">
+            <h3 class="font-20-500">Login</h3>
+            <form class="flex-col gap-3">
+                <div class="flex-col gap-6">
+                    <label class="font-16-500" for="email">Email</label>
+                    <input class="input-default" type="email" name="email" id="emailInput" placeholder="Digite seu email" required>
+                </div>
+                <div class="flex-col gap-6">
+                    <label class="font-16-500" for="senha">Senha</label>
+                    <input class="input-default" type="password" name="senha" id="passwordInput" placeholder="Digite sua senha" required>
+                </div>
+                <button class="btn-primary-1" disabled id="loginBtn">Acessar</button>
+            </form>
+            <p class="font-14-500">Ainda não possui conta?</p>
+            <p class="font-14-400">Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+            <a href="./pages/register/index.html"><button class="btn-outline">Cadastrar</button></a>
+        </section>
+    </main>
+    <!-- Page Script-->
+    <script type="module" src="./pages/login/script.js"></script>
+</body>
+</html>

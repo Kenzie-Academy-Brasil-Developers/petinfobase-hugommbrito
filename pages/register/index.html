@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hugo Brito">
+
+    <!-- Globals -->
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/menu.css">
+    <link rel="stylesheet" href="../../styles/margins.css">
+    <link rel="stylesheet" href="../../styles/position.css">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/inputs.css">
+    <link rel="stylesheet" href="../../styles/toasty.css">
+    <!-- Page -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Petinfo - Cadastro</title>
+    <meta name="description" content="Página de cadastro do site Petinfo">
+    <link rel="shortcut icon" href="../../assets/img/favicons/favicon.jpeg" 
+    type="image/x-icon">
+</head>
+<body>
+    <main class="container-2 flex spc-btwn">
+        <section class="flex-col gap-3 ">
+            <div class="flex spc-btwn">
+                <h3 class="font-20-500">Cadastro</h3>
+                <a href="../../index.html"><button class="btn-outline back-to-login">Voltar para o login</button></a>
+            </div>
+            <form class="flex-col gap-3">
+                <div class="flex-col gap-6">
+                    <label class="font-16-500" for="usuario">Usuário</label>
+                    <input class="input-default" type="text" name="usuario" id="userRegister" placeholder="Digite seu usuário aqui">
+                </div>
+                <div class="flex-col gap-6">
+                    <label class="font-16-500" for="email">Email</label>
+                    <input class="input-default" type="email" name="email" id="emailRegister" placeholder="Digite seu email aqui">
+                </div>
+                <div class="flex-col gap-6">
+                    <label class="font-16-500" for="foto">Link da foto do perfil</label>
+                    <input class="input-default" type="text" name="foto" id="avatarRegister" placeholder="Insira o link aqui">
+                </div>
+                <div class="flex-col gap-6">
+                    <label class="font-16-500" for="senha">Senha</label>
+                    <input class="input-default" type="password" name="senha" id="passwordRegister" placeholder="Digite sua senha">
+                </div>
+                <button type="submit" class="btn-primary-1 bottom-part-btn" id="cadastrarBtn" disabled>Cadastrar</button>
+            </form>
+            <a href="../../index.html"><button class="btn-outline bottom-part-btn back-to-login">Voltar para o login</button></a>
+        </section>
+        <section class="flex-col gap-3 ">
+            <h1 class="font-32-500">Petinfo</h1>
+            <h2 class="font-32-600 color-primary">Ooooooba!</h2>
+            <p class="font-16-400">Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+            <div class="flex gap-5">
+                <img src="../../assets/img/pageRegister/Rectangle 2.png" alt="Imagem de um gato branco com fundo cinza">
+                <div class="flex-col gap-5">
+                    <div class="flex gap-5">
+                        <img src="../../assets/img/pageRegister/Rectangle 3.png" alt="Imagem de um gato marrom com fundo preto">
+                        <img src="../../assets/img/pageRegister/Rectangle 5.png" alt="Imagem de um cachorro preto/branco/marrom com fundo rosa claro">
+                    </div>
+                    <img src="../../assets/img/pageRegister/Rectangle 4.png" alt="Imagem de cachorro alegre com fundo braco">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

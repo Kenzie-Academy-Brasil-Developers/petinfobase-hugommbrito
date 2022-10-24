@@ -1,0 +1,46 @@
+⬜✅
+✅   1 - Clonar Repositórios
+✅      I - Base da Página
+✅      II - API
+✅      III - Instalar API
+✅   2 - Setar o Scaffold (Ajustar os arquivos)
+✅   3 - Ajustar componentização de CSS
+✅       I - Cores
+✅       II - Botões
+✅       III - Inputs
+✅       IV - Fonts
+✅       V - Espaçamentos
+✅    2 - Gerar HTML
+✅        I - login
+✅        II - cadastro
+✅        III - Home
+✅    3 - Estilizar
+✅        I - login
+✅        II - cadastro
+✅        III - Home
+✅        IV - Modais
+✅        V - Checar se está FIEL ao figma
+⬜   4 - Desenvolver Formulário LOGIN
+✅       I - Enquanto os dois inputs não estiverem preenchidos, o botão de acessar fica desabilitado
+✅       II - Crie uma validação onde o usuário NÃO poderá acessar a página Home se os campos estiverem vazios
+✅       III - Habilite o botão que contém o texto "Acessar" quando os inputs estiverem devidamente preenchidos.
+✅       IV - Ao clicar no botão que contém o texto "Acessar" inserir um ícone de loading, enquanto a API não retornar o token.
+⛔       V - Caso o usuário não exista informar que o usuário não foi encontrado em um toltip. (A API não retorna a informação de usuário inexistente, apenas email incorreto)
+✅       VI - Criar a lógica de verificação para o login (fetch POST)
+⬜       VII - Remover dados do LocalStorage ao fazer logout 
+✅   5 - Desenvolver Formulário CADASTRO
+✅       I - Enquanto os quatro inputs do cadastro não estiverem preenchidos, o botão que contém o texto "Cadastrar" deve ficar desabilitado
+✅       II - Ao clicar no botão que contém o texto "Cadastrar" inserir um ícone de loading, enquanto a API não retornar uma resposta
+✅       III - Criar a lógica de verificação para o cadastro (fetch POST)
+✅       IV - Redirecionar para Login quando cadastro for bem executado
+✅   6 - Desenvolver lógica da página Home
+✅       I - Renderizar todos os posts contidos na API
+✅       II - Exibir no máximo 145 caracteres no conteúdo post
+✅       III - Passar todos os dados via data-attribute para abrir o modal dinamicamente com os post completo
+✅       IV - Converter data de publicação para o formato proposto no layout do Figma (uSAR MÉTODO DA CLASSE DATE)
+✅       V - Adicionar botão de editar e remover APENAS caso o post seja do usuário logado
+✅       VI - Botão editar: chamar o modal editar, com o título em um input e o conteúdo textarea. Quando o usuário clicar no botão que contém o texto "Salva Alterações", enviar os dados dos inputs para API, via método patch.
+🟨       VII - Botão excluir: chamar o modal de alerta, solicitando a confirmação da ação. Caso o usuário confirme, enviar o id do post que o usuário deseja excluir para a API, via método delete.
+⬜   7 - Desenvolver lógica da NavBar
+✅       I - Botão Criar publicação: Chamar modal com o formulário contendo os campos necessários para criar um post. Ao usuário finalizar o preenchimento, enviar os dados para API, via método post.
+⬜       II - Criar modal do usuário com botão de logout

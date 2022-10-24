@@ -1,0 +1,191 @@
+.btn-primary-1{
+    height: var(--size-3);
+    width: max-content;
+    padding: 0 var(--gap-5);
+
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-1);
+
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-grey-9);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary-1:hover{
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary)
+}
+.btn-primary-1:disabled{
+    opacity: 0.3;
+    cursor: auto;
+}
+
+
+.btn-link{
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-1);
+
+
+    color: var(--color-primary);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-link:hover{
+    text-decoration: underline;
+}
+
+
+.btn-grey-1{
+    height: var(--size-3);
+    width: max-content;
+    padding: 0 var(--gap-5);
+
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-1);
+
+    background-color: var(--color-grey-6);
+    border: 2px solid var(--color-grey-6);
+    color: var(--color-grey-4);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-grey-1:hover{
+    color: var(--color-grey-3);
+}
+
+
+.btn-alert{
+    height: var(--size-3);
+    width: max-content;
+    padding: 0 var(--gap-5);
+
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-1);
+
+    background-color: var(--color-alert-1);
+    border: 2px solid var(--color-alert-1);
+    color: var(--color-grey-9);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-alert:hover{
+    background-color: var(--color-alert-2);
+    border: 2px solid var(--color-alert-2);
+}
+
+
+.btn-outline{
+    height: var(--size-3);
+    width: max-content;
+    padding: 0 var(--gap-5);
+
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-1);
+
+    background-color: transparent;
+    border: 3px solid var(--color-grey-6);
+    color: var(--color-grey-1);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-outline:hover{
+    background-color: var(--color-grey-8);
+    border: 3px solid var(--color-grey-6);
+}
+.btn-outline:focus, .btn-outline-active{
+    background-color: var(--color-grey-8);
+    border: 3px solid var(--color-grey-6);
+}
+
+
+.btn-small-1{
+    height: var(--size-3);
+    width: max-content;
+    padding: 0 var(--gap-7);
+
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-1);
+
+    background-color: var(--color-grey-6);
+    border: 2px solid var(--color-grey-6);
+    color: var(--color-grey-4);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-small-1:hover{
+    color: var(--color-grey-3);
+}
+
+
+.btn-small-2{
+    height: var(--size-3);
+    width: max-content;
+    padding: 0 var(--gap-7);
+
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-1);
+
+    background-color: transparent;
+    border: 3px solid var(--color-grey-6);
+    color: var(--color-grey-1);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-small-2:hover{
+    background-color: var(--color-grey-8);
+    border: 3px solid var(--color-grey-6);
+}
+.btn-small-2:focus, .btn-small-2-active{
+    background-color: var(--color-grey-8);
+    border: 3px solid var(--color-grey-6);
+}
+
+
+/*PARA ATIVAR, COLOQUE UMA DIV COM ESSA CLASSE DENTRO DO BOTÃO.*/
+.loading-btn{   
+    height: calc(var(--size-3) * 0.65);
+    width: calc(var(--size-3) * 0.65);
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFFFFF;
+    animation: loadingAnimation 1s ease infinite;
+}
+
+@keyframes loadingAnimation{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}

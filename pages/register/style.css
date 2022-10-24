@@ -1,0 +1,16 @@
+section {
+    width: 45%;
+    justify-content: center;
+}
+
+section:nth-child(1){
+    border: 2px solid var(--color-grey-6);
+    padding: var(--gap-3);
+}
+
+.bottom-part-btn{
+    width: 100%;
+}
+
+
+    
