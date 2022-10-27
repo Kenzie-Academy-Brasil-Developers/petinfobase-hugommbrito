@@ -2,6 +2,17 @@ import { getPostsAPI, getUserDataAPI, deletePostAPI, editPostAPI, createPostAPI 
 import { modal } from "../../scripts/modal.js";
 import { toast } from "../../scripts/toasty.js";
 
+// REDIRECIONA CASO NÃO ESTEJA LOGADO
+function redirectIfNotLoged(){
+    let token = localStorage.getItem("token")
+
+    if (!token){
+        window.location.replace("../../index.html")
+    }
+    
+}
+redirectIfNotLoged()
+
 
 // RENDERIZAR POSTS
 async function renderPosts() {
@@ -69,7 +80,7 @@ async function renderPosts() {
     modalPostView(APIPostsResponse)
     deletePost(APIPostsResponse, userToken)
     editPost(APIPostsResponse, userToken)
-    createPost(userToken)
+
 }
 renderPosts()
 
@@ -135,7 +146,6 @@ async function deletePost(postList, token) {
             let selectedPostID = selectedPost.id
 
             let APIresponse = await deletePostAPI(token, selectedPostID)
-            console.log(APIresponse)
             toast('Deletado!', APIresponse.message)
             renderPosts()
 
@@ -210,8 +220,6 @@ async function editPost(postList, token){
                     modalTag.classList.toggle("display-none")
                 }
 
-                console.log(APIresponse)
-
                 renderPosts()
             })
         })
@@ -278,8 +286,35 @@ async function createPost(token){
             }
 
             renderPosts()
-            console.log(APIresponse)
 
         })
+    }, {})
+}
+await createPost(JSON.parse(localStorage.getItem('token')))
+
+//MOSTRA CAIXA DE LOGOUT
+function showLogoutBox() {
+    let userImg = document.querySelector('#userAvatar')
+    let logoutBox = document.querySelector('#logoutBox')
+
+    userImg.addEventListener('mouseenter', () => {
+        logoutBox.classList.toggle('hide')
+    })
+
+    logoutBox.addEventListener('mouseleave', () => {
+        logoutBox.classList.toggle('hide')
     })
 }
+showLogoutBox()
+
+
+// LOGOUT
+function logout() {
+    let logoutBtn = document.querySelector('#logoutBtn')
+
+    logoutBtn.addEventListener('click', () => {
+        localStorage.setItem('token', "")
+        window.location.replace('../../index.html')
+    })
+}
+logout()

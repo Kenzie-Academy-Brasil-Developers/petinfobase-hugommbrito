@@ -41,8 +41,9 @@ function login() {
 
                 window.location.replace("pages/home/index.html")
             } else {
-                let form = document.querySelector("form")
-                form.insertAdjacentHTML("beforeend", `
+                let divLoginAlert = document.querySelector("#loginAlert")
+                divLoginAlert.innerText = ""
+                divLoginAlert.insertAdjacentHTML("beforeend", `
                 <p class="color-alert-1 font-14-400" >email e/ou senha estão incorretos</p>
                 `)
                 loginBtn.innerHTML = "Acessar"

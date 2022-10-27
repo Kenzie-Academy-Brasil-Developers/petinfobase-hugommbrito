@@ -1,5 +1,4 @@
 function toast(title, messagem){
-    console.log('EXECUTEI!')
     const body = document.querySelector('body')
     
     const container = document.createElement('div')
@@ -36,7 +35,6 @@ function toast(title, messagem){
     textContainer.append(h3, span)
 
     container.append(icon, textContainer)
-    console.log(container)
     body.appendChild(container)
 }
 

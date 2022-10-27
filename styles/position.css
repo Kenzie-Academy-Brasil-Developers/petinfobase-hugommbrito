@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.hide{
+    display: none;
+}
+
 .flex-col{
     display: flex;
     flex-direction: column;
